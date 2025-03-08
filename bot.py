@@ -3,7 +3,8 @@ Telegram Fight Bot 🤖
 A Telegram bot that allows users to engage in a "fight" by replying to each other, with various gameplay features, leaderboard functionality, and an achievement system.
 """
 
-from telegram.ext import Updater, CommandHandler, MessageHandler, filters, InlineKeyboardButton, InlineKeyboardMarkup
+from telegram import InlineKeyboardButton, InlineKeyboardMarkup
+from telegram.ext import Updater, CommandHandler, MessageHandler, filters
 from fight_handlers import start, help, fight, stop, result, timedfight, themedfight, title, teamfight, duel, unlock_achievement
 from combat_handlers import reply, attack, defend
 from game_logic import stop_fight
